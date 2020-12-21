@@ -6,3 +6,9 @@ body {
   font-family: Century Gothic;
   margin: 0;
 }
+
+canvas{
+    border: 1px solid #111;
+    width: 500vw;
+    height: 500vh;
+}
