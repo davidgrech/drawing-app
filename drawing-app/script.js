@@ -2,12 +2,16 @@ const canvas = document.getElementById("canvas");
 
 const ctx = canvas.getContext("2d");
 
-let size = 20;
+let size = 3;
 let x = 50;
 let y = 50;
 
+canvas.addEventListener("mousemove", (e) => {
 
-canvas.addEventListener("mousedown", () => {
+    const x = e.offsetX;
+    const y = e.offsetY;
+
+    drawCircle(x, y);
 
 });
 
@@ -19,12 +23,12 @@ function drawCircle(x, y) {
 
 drawCircle(50, 50);
 
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+//function draw() {
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    drawCircle(x++, y);
+//     drawCircle(x++, y);
 
-    requestAnimationFrame(draw);
-}
+//     requestAnimationFrame(draw);
+// }
 
-draw();
+// draw();
