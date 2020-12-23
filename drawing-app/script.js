@@ -6,13 +6,23 @@ let size = 3;
 let x = 50;
 let y = 50;
 
+canvas.addEventListener('mousedown', () => {
+    isPressed = true;
+});
+
+canvas.addEventListener('mouseup', () => {
+    isPressed = false;
+});
+
 canvas.addEventListener("mousemove", (e) => {
 
-    const x = e.offsetX;
-    const y = e.offsetY;
+    if(isPressed){
+        const x = e.offsetX;
+        const y = e.offsetY;
 
-    drawCircle(x, y);
-
+        drawCircle(x, y);
+    }
+    
 });
 
 function drawCircle(x, y) {
