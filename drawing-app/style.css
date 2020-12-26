@@ -16,5 +16,23 @@ body {
 }
 
 canvas {
-    border: 2px solid #111;
+    border: 1px solid #111;
+}
+
+.toolbox {
+    width: 800px;
+    background-color: rebeccapurple;
+    padding: 1rem;
+}
+
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    padding: 0.25rem;
 }
