@@ -39,3 +39,7 @@ canvas {
     padding: 0.25rem;
     margin: 0.25rem;
 }
+
+.toolbox >*:last-child{
+    margin-left: auto;
+}
