@@ -22,7 +22,9 @@ canvas {
 .toolbox {
     width: 804px;
     background-color: rebeccapurple;
+    border: 1px rebeccapurple;
     padding: 1rem;
+    display: flex;
 }
 
 .toolbox > * {
@@ -35,4 +37,5 @@ canvas {
     height: 50px;
     font-size: 2rem;
     padding: 0.25rem;
+    margin: 0.25rem;
 }
